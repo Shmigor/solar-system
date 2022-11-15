@@ -14,7 +14,7 @@ const navigate = useNavigate();
                     {
                         planets.map((planets) =>
                         {return(
-                            <button onClick={() => navigate(`/${planets.name}`)} className="navigation-planets-btn">{planets.name}</button>
+                            <button key={planets.name} onClick={() => navigate(`/${planets.name}`)} className="navigation-planets-btn">{planets.name}</button>
                         )}
                         )
                     }
