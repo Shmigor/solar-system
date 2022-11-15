@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  background-image: url("./assets/background-stars.svg");
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+.navigation {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.navigation-logo {
+  text-transform: uppercase;
+}
+
+.navigation-planets-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navigation-planets-btn {
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.solar-system {
+  padding: 50px 30px 0 0;
+}
