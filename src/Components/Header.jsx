@@ -1,13 +1,20 @@
+import { Link, useNavigate } from "react-router-dom";
+
 const Header = ({planets}) => {
+
+const navigate = useNavigate();
+
     return(
         <div className="navigation">
-            <h1 className="navigation-logo">the planets</h1>
+            <Link style={{textDecoration: 'none', color: 'white'}} to="/">
+                <h1 className="navigation-logo">the planets</h1>
+            </Link>
             <nav className="navigation-planets-container">
                 
                     {
                         planets.map((planets) =>
                         {return(
-                            <button className="navigation-planets-btn">{planets.name}</button>
+                            <button onClick={() => navigate(`/${planets.name}`)} className="navigation-planets-btn">{planets.name}</button>
                         )}
                         )
                     }

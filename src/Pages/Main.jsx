@@ -1,6 +1,13 @@
-const Main = () => {
+import Header from "../Components/Header";
+
+
+
+const Main = ({planets, setPlanets}) => {
     return(
-        <div></div>
+        <div className="homepage">
+            <Header planets={planets}/>
+           
+        </div>
     )
 };
 
